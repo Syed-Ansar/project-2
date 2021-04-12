@@ -1,0 +1,145 @@
+body{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 720px;
+ object-fit: cover;
+}
+.container{
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -325px bottom 200px,right -188px top 400px;
+    width: 1440px;
+    height: 720px;
+    display: flex;
+    overflow: hidden;
+}
+.card{
+    position: relative;
+    top: 172px;
+    bottom: 172px;
+    left: 545px;
+    right: 545px;
+    width: 350px;
+    height: 375px;
+    background-color:hsl(0, 12%, 94%);
+   box-shadow: rgba(0,0, 0, 20px);
+   border-radius: 15px;
+}
+.pattern{
+    background-image: url(/images/bg-pattern-card.svg);
+    width: 350px;
+    height: 140px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-repeat: no-repeat,no-repeat;
+}
+.card img{
+    position: relative;
+    left: 126px;
+    bottom: 55px;
+    border:  5px solid hsl(0, 12%, 94%);
+    border-radius: 50%;
+}
+
+.stats{
+    position: relative;
+    top: 40px;
+}
+.card h3{
+    letter-spacing: 1px;
+    position: relative;
+    left: 110px;
+    bottom: 55px;
+    word-spacing: 4px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.stats h2{
+    position: relative;
+    top: -110px;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.card hr{
+    position: relative;
+    bottom: 70px;
+    border-color:rgba(255, 255, 255, 0.527) ;
+}
+.card h5{
+    letter-spacing: 0px;
+    position: relative;
+    bottom: 10px;
+    left: 45px;
+    color: hsla(223, 4%, 63%, 0.815);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: normal;
+}
+.followers{
+    position: relative;
+    bottom: 105px;
+    right: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    letter-spacing: 1px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight:normal;
+    color: hsla(223, 4%, 63%, 0.815);
+}
+span{
+    color: hsla(223, 4%, 63%, 0.815);
+    font-weight: lighter;
+}
+
+
+/* mobile phones */
+
+@media screen and (max-width:375px) {
+    body{
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+    }
+        .container{
+            align-content: center;
+            position:absolute;
+            width: 375px;
+            background-color: hsl(185, 75%, 39%);
+            background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+            background-position: right 200px top -500px,left 58px top 400px;
+            background-repeat: no-repeat, no-repeat;
+            overflow: hidden;
+        }
+        .card{
+            position: absolute;
+            left: 25px;
+            top: 172px;
+            width: 325px;
+            height: 375px;
+            background-color: hsl(0, 12%, 94%);
+            box-shadow: rgba(0,0, 0, 20px);
+            border-radius: 15px;
+        }
+        .pattern{
+            background-image: url(/images/bg-pattern-card.svg);
+            width: 325px;
+            height: 140px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            background-repeat: no-repeat,no-repeat;
+        }
+        .card img{
+            position: relative;
+            left: 110.5px;
+            bottom: 55px;
+            border:  5px solid hsl(0, 12%, 94%);
+            border-radius: 50%;
+        }
+    }
